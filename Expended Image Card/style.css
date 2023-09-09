@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+input[type='radio'] {
+    display: none;
+}
+label {
+    width: 12vh;
+    height: 72vh;
+    margin: 1px;
+    border-radius: 10vh;
+    cursor: pointer;
+    background: no-repeat #fff;
+    transition: all 1500ms ease;
+}
+label[for='a'] {
+    background: no-repeat
+        url('https://source.unsplash.com/random/700x700?sig=1');
+}
+label[for='b'] {
+    background: no-repeat
+        url('https://source.unsplash.com/random/700x700?sig=2');
+}
+label[for='c'] {
+    background: no-repeat
+        url('https://source.unsplash.com/random/700x700?sig=3');
+}
+label[for='d'] {
+    background: no-repeat
+        url('https://source.unsplash.com/random/700x700?sig=4');
+}
+label[for='e'] {
+    background: no-repeat
+        url('https://source.unsplash.com/random/700x700?sig=5');
+}
+label[for='f'] {
+    background: no-repeat
+        url('https://source.unsplash.com/random/700x700?sig=6');
+}
+label[for='g'] {
+    background: no-repeat
+        url('https://source.unsplash.com/random/700x700?sig=7');
+}
+#a[type='radio']:checked ~ label[for='a'] {
+    border-radius: 0;
+    width: 700px;
+}
+
+#b[type='radio']:checked ~ label[for='b'] {
+    border-radius: 0;
+    width: 700px;
+}
+
+#c[type='radio']:checked ~ label[for='c'] {
+    border-radius: 0;
+    width: 700px;
+}
+
+#d[type='radio']:checked ~ label[for='d'] {
+    border-radius: 0;
+    width: 700px;
+}
+
+#e[type='radio']:checked ~ label[for='e'] {
+    border-radius: 0;
+    width: 700px;
+}
+
+#f[type='radio']:checked ~ label[for='f'] {
+    border-radius: 0;
+    width: 700px;
+}
+
+#g[type='radio']:checked ~ label[for='g'] {
+    border-radius: 0;
+    width: 700px;
+}
+label::after {
+    color: #fff;
+    position: relative;
+    top: 68vh;
+    left: -100vh;
+}
+input[type='radio']:checked ~ label::after {
+    left: 0vh;
+}
+#a[type='radio']:checked ~ label[for='a']::after {
+    content: 'First Image';
+}
+#b[type='radio']:checked ~ label[for='b']::after {
+    content: 'Second Image';
+}
+#c[type='radio']:checked ~ label[for='c']::after {
+    content: 'Third Image';
+}
+#d[type='radio']:checked ~ label[for='d']::after {
+    content: 'Fourth Image';
+}
+#e[type='radio']:checked ~ label[for='e']::after {
+    content: 'FiFth Image';
+}
+#f[type='radio']:checked ~ label[for='f']::after {
+    content: 'FiFth Image';
+}
+#g[type='radio']:checked ~ label[for='g']::after {
+    content: 'FiFth Image';
+}

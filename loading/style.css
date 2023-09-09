@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+/* font-family: 'Nabla', cursive;  Color Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: no-repeat
+        url('https://images.unsplash.com/photo-1621091464077-529f7e5e737d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080&q=80');
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(100px);
+    transition: all 500ms ease-out;
+}
+
+@font-palette-values --GraysRemix {
+    font-family: 'Nabla';
+    base-palette: 3;
+}
+
+h1 {
+    font-size: 15ch;
+    font-family: 'Nabla';
+    font-palette: --GraysRemix;
+}
